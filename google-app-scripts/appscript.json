@@ -1,0 +1,46 @@
+{
+  "timeZone": "America/Denver",
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "dependencies": {
+    "enabledAdvancedServices": [
+      {
+        "userSymbol": "Calendar",
+        "serviceId": "calendar",
+        "version": "v3"
+      }
+    ],
+    "libraries": [
+      {
+        "userSymbol": "OAuth2",
+        "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+        "version": "41"
+      },
+      {
+        "userSymbol": "FirebaseApp",
+        "version": "2",
+        "libraryId": "1VlYLzhwx0YEoxIe62eItLAZeobVt_l-GQUKt2MXXuBHFVsqBkl9C_yBB"
+      }
+    ]
+  },
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/calendar.addons.execute",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.read",
+    "https://www.googleapis.com/auth/calendar.addons.current.event.write",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/calendar.events",
+    "https://www.googleapis.com/auth/userinfo.email"
+  ],
+  "addOns": {
+    "common": {
+      "logoUrl": "https://imgur.com/a/GaSliK4",
+      "name": "Minder"
+    },
+    "calendar": {
+      "currentEventAccess": "READ",
+      "homepageTrigger": {
+        "runFunction": "showLogInButton"
+      }
+    }
+  }
+}
